@@ -67,6 +67,15 @@ const Hero = () => {
         </div>
       </div>
 
+      {/* TISM Mascot */}
+      <div className="absolute bottom-0 right-0 z-20">
+        <img
+          src="/tismmascot.png"
+          alt="TISM Mascot"
+          className="h-64 sm:h-80 lg:h-96 object-contain"
+        />
+      </div>
+
       {/* Character Lineup - Hidden for now */}
       {/* <div className="absolute bottom-0 left-0 right-0 z-20">
         <div className="max-w-7xl mx-auto px-4">

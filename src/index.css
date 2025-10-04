@@ -213,6 +213,10 @@
     animation: scrollJokersReverse 18s linear infinite;
   }
 
+  .animate-scroll-videos {
+    animation: scrollVideos 20s linear infinite;
+  }
+
   /* Card flipping animation */
   .card-flip {
     position: relative;
@@ -674,6 +678,15 @@
   }
   100% {
     transform: translateX(0);
+  }
+}
+
+@keyframes scrollVideos {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
   }
 }
 
