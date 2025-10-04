@@ -6,7 +6,7 @@ import JoinTrashSection from '@/components/JoinTrashSection';
 const Index = () => {
   return (
     <div className="min-h-screen bg-gradient-hero">
-      <main>
+      <main className="[&>section]:m-0 [&>section]:p-0">
         <Hero />
         <WannaPlaySection />
         <TrashUtilitySection />

@@ -217,6 +217,10 @@
     animation: scrollVideos 20s linear infinite;
   }
 
+  .animate-scroll-logo {
+    animation: scrollLogo 25s linear infinite;
+  }
+
   /* Card flipping animation */
   .card-flip {
     position: relative;
@@ -687,6 +691,27 @@
   }
   100% {
     transform: translateX(-50%);
+  }
+}
+
+@keyframes scrollLogo {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@property --a { 
+  syntax: '<angle>'; 
+  initial-value: 0deg; 
+  inherits: false; 
+}
+
+@keyframes sweep {
+  to { 
+    --a: 360deg; 
   }
 }
 

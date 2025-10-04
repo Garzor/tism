@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
+import PsychedelicBackground from './PsychedelicBackground';
 
 const TrashUtilitySection = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -43,8 +44,12 @@ const TrashUtilitySection = () => {
   ];
 
   return (
-    <section id="trash-utility" className="relative bg-black py-16 sm:py-24 overflow-hidden">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="trash-utility" className="relative py-16 sm:py-24 overflow-hidden">
+      {/* Psychedelic Background */}
+      <PsychedelicBackground />
+      
+      {/* Content */}
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center">
           {/* Left Side - Mascot */}
           <div 
@@ -54,8 +59,8 @@ const TrashUtilitySection = () => {
             }`}
           >
             <img
-              src="/dice.png"
-              alt="Spinning Dice"
+              src="/rubik.png"
+              alt="Spinning Rubik's Cube"
               className="w-full max-w-md mx-auto object-contain roulette-spin"
             />
           </div>
