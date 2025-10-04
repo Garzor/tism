@@ -1,4 +1,3 @@
-import BouncingChips from './BouncingChips';
 
 const JoinTrashSection = () => {
   const socialLinks = [
@@ -39,15 +38,12 @@ const JoinTrashSection = () => {
 
   return (
     <section id="join-trash" className="relative bg-black pt-8 sm:pt-12 pb-16 sm:pb-24 overflow-hidden" style={{ backgroundColor: '#000000' }}>
-      {/* Bouncing Chips */}
-      <BouncingChips />
-      
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         {/* Logo */}
         <div className="mb-12 sm:mb-16">
           <img
-            src="/gamblelogoo.png"
-            alt="GAMBLE SZN Logo"
+            src="/tislogo.png"
+            alt="TISM CULT Logo"
             className="h-40 sm:h-56 lg:h-72 xl:h-80 mx-auto object-contain bounce-around"
           />
         </div>
