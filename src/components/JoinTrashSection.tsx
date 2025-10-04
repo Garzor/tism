@@ -38,6 +38,36 @@ const JoinTrashSection = () => {
 
   return (
     <section id="join-trash" className="relative bg-black pt-8 sm:pt-12 pb-16 sm:pb-24 overflow-hidden" style={{ backgroundColor: '#000000' }}>
+      {/* Scrolling TARDSITE1 Video Background */}
+      <div className="absolute inset-0 flex animate-scroll-videos h-full" style={{ width: '200%' }}>
+        {[...Array(8)].map((_, i) => (
+          <div key={`video-${i}`} className="flex-1 h-full">
+            <video 
+              className="w-full h-full object-cover"
+              autoPlay 
+              loop 
+              muted 
+              playsInline
+            >
+              <source src="/TARDSITE1.mp4" type="video/mp4" />
+            </video>
+          </div>
+        ))}
+        {[...Array(8)].map((_, i) => (
+          <div key={`video-dup-${i}`} className="flex-1 h-full">
+            <video 
+              className="w-full h-full object-cover"
+              autoPlay 
+              loop 
+              muted 
+              playsInline
+            >
+              <source src="/TARDSITE1.mp4" type="video/mp4" />
+            </video>
+          </div>
+        ))}
+      </div>
+
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         {/* Logo */}
         <div className="mb-12 sm:mb-16">
