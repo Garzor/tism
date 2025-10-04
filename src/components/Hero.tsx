@@ -1,6 +1,6 @@
 // Removed static background image import - now using video background
 import gambleLogo from '/gamblelogoo.png';
-import tismLogo from '/TISMLOGO.png';
+import tismLogo from '/tislogo.png';
 import char1 from '/ChatGPT Image Sep 12, 2025 at 08_16_08 PM.png';
 import char2 from '/ChatGPT Image Sep 12, 2025 at 08_21_43 PM.png';
 import char3 from '@/assets/char_3.png';
@@ -9,8 +9,7 @@ import char5 from '@/assets/char_5.png';
 import char6 from '@/assets/char_6.png';
 import char7 from '@/assets/char_7.png';
 import char8 from '@/assets/char_8.png';
-import TrashRain from './TrashRain';
-import BouncingDice from './BouncingDice';
+import BouncingRubiks from './BouncingRubiks';
 
 const Hero = () => {
   const characters = [
@@ -39,23 +38,11 @@ const Hero = () => {
       </video>
       <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-transparent to-black/40" />
       
-      {/* Trash Rain Effect */}
-      <TrashRain />
-      
-      {/* Bouncing Dice Effect */}
-      <BouncingDice />
-      
-      {/* Spinning Roulette Wheel */}
-      <div className="absolute bottom-4 left-4 sm:bottom-6 sm:left-6 lg:bottom-8 lg:left-8 z-20">
-        <img
-          src="/ChatGPT Image Oct 3, 2025 at 04_16_11 PM.png"
-          alt="Spinning Roulette Wheel"
-          className="h-32 sm:h-40 lg:h-48 object-contain roulette-spin drop-shadow-lg"
-        />
-      </div>
+      {/* Bouncing Rubik's Cubes Effect */}
+      <BouncingRubiks />
       
       {/* Content Container */}
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 pb-32">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-32">
         {/* Logo */}
         <div className="text-center mb-8">
           <img 
@@ -64,15 +51,14 @@ const Hero = () => {
             className="h-48 sm:h-64 lg:h-80 object-contain mx-auto drop-shadow-2xl big-breathe tilt"
           />
           
-          {/* Subheading */}
-          <p className="text-white/90 text-lg sm:text-xl lg:text-2xl font-medium mt-6 mb-8 tracking-wide">
-            Because Real Utility is Overrated
-          </p>
-          
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <a href="https://x.com/PumpCrew_" target="_blank" rel="noopener noreferrer" className="btn-pump">
-              <span>BUY GAMBLE</span>
+            <a href="https://x.com/PumpCrew_" target="_blank" rel="noopener noreferrer" className="transform hover:scale-[1.05] transition-all duration-300">
+              <img 
+                src="/button.png" 
+                alt="BUY NOW" 
+                className="h-32 sm:h-48 lg:h-56 object-contain"
+              />
             </a>
             <a href="https://x.com/PumpCrew_" target="_blank" rel="noopener noreferrer" className="btn-ghost">
               Join Us on X
