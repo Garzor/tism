@@ -1,5 +1,6 @@
 // Removed static background image import - now using video background
 import gambleLogo from '/gamblelogoo.png';
+import tismLogo from '/TISMLOGO.png';
 import char1 from '/ChatGPT Image Sep 12, 2025 at 08_16_08 PM.png';
 import char2 from '/ChatGPT Image Sep 12, 2025 at 08_21_43 PM.png';
 import char3 from '@/assets/char_3.png';
@@ -25,29 +26,6 @@ const Hero = () => {
 
   return (
     <section id="hero" className="relative min-h-[90vh] flex flex-col justify-center overflow-hidden">
-      {/* Scrolling Logo at Top */}
-      <div className="absolute top-0 left-0 w-full h-20 bg-black/80 backdrop-blur-sm z-30 flex items-center overflow-hidden">
-        <div className="flex animate-marquee whitespace-nowrap">
-          {/* First set of logos */}
-          {[...Array(15)].map((_, i) => (
-            <img
-              key={`set1-${i}`}
-              src={gambleLogo}
-              alt="GAMBLE SZN Logo"
-              className="h-16 mx-6 object-contain flex-shrink-0"
-            />
-          ))}
-          {/* Duplicate set for seamless loop */}
-          {[...Array(15)].map((_, i) => (
-            <img
-              key={`set2-${i}`}
-              src={gambleLogo}
-              alt="GAMBLE SZN Logo"
-              className="h-16 mx-6 object-contain flex-shrink-0"
-            />
-          ))}
-        </div>
-      </div>
 
       {/* Background Video */}
       <video 
@@ -57,7 +35,7 @@ const Hero = () => {
         muted 
         playsInline
       >
-        <source src="/8second_looping_chaotic_202510031527_pt2jz.mp4" type="video/mp4" />
+        <source src="/20251003_2232_01k6pgze4afsg884m65xm0ppap.mp4" type="video/mp4" />
       </video>
       <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-transparent to-black/40" />
       
@@ -77,13 +55,13 @@ const Hero = () => {
       </div>
       
       {/* Content Container */}
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-32">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 pb-32">
         {/* Logo */}
         <div className="text-center mb-8">
           <img 
-            src={gambleLogo} 
-            alt="GAMBLE SZN Logo" 
-            className="h-48 sm:h-64 lg:h-80 object-contain mx-auto drop-shadow-2xl logo-dynamic"
+            src={tismLogo} 
+            alt="TISM Logo" 
+            className="h-48 sm:h-64 lg:h-80 object-contain mx-auto drop-shadow-2xl big-breathe tilt"
           />
           
           {/* Subheading */}
