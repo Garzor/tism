@@ -49,7 +49,7 @@ const JoinTrashSection = () => {
               muted 
               playsInline
             >
-              <source src="/TARDSITE1.mp4" type="video/mp4" />
+              <source src="/TARDSITEnew.mp4" type="video/mp4" />
             </video>
           </div>
         ))}
@@ -62,7 +62,7 @@ const JoinTrashSection = () => {
               muted 
               playsInline
             >
-              <source src="/TARDSITE1.mp4" type="video/mp4" />
+              <source src="/TARDSITEnew.mp4" type="video/mp4" />
             </video>
           </div>
         ))}
